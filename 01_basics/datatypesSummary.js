@@ -50,3 +50,34 @@ let myFunction = function(){
 }
 
 myFunction();
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Memory Used -
+// Primitive Data Types => Stack , means copy of variable is received
+//Non-Primitive Data Types => Heap , means reference of orignal value is received
+
+let myName = "Mehul Bajaj"
+let anotherName = myName 
+anotherName = "Mehul"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "qwe2@gmail.com",
+    upi: "qwe@"
+};
+
+let userTwo=userOne
+userTwo.email="xyz@gmil.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Primitive data types (string, number, boolean, etc.) are copied by value
+// Changing one variable does not affect the other
+
+// Reference data types (object, array, function) are copied by reference
+// Both variables point to the same memory location
+// Changing one object also changes the other
