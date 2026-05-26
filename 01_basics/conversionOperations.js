@@ -96,3 +96,64 @@ let stringNumber = String(someNumber)
 
 console.log(stringNumber);
 console.log(typeof(stringNumber));
+
+// *****************Operations ******************* //
+let value = 56
+let negvalue = -value
+console.log(negvalue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2); //2^2
+console.log(2/2);
+console.log(2%3);
+
+let str1 = "hello" 
+let str2 = "Mehul"
+let str = str1+str2
+console.log(str);
+// JavaScript evaluates from left to right.
+// If a string comes first, + works as string concatenation.
+// If numbers come first, normal addition happens.
+//console.log("1" + 2 + 2); // "122"
+//console.log(1 + 2 + "2"); // "32
+
+
+console.log("1"+2); //12
+console.log(1+"2"); //12
+console.log("1"+2+2); //122
+console.log(1+2+"2"); //32 
+
+console.log(3+4*5%3); //very very bad method, always use parenthesis
+
+//tricky conversions 
+console.log(true); //true
+console.log(+true); //1
+//console.log(true+); // ERROR
+console.log(+""); //0 , but don't use. 
+let num1, num2, num3;
+
+num1 = num2 = num3 = 2 + 2; // same value
+
+console.log(num1);
+console.log(num2);
+console.log(num3);
+
+// Prefix Increment (++x)
+// First increases the value, then uses it
+
+// Postfix Increment (x++)
+// First uses the value, then increases it
+
+let gameCounter = 100
+
+gameCounter++; //postfix
+
+console.log(gameCounter);
+
+let gameCounter = 100
+
+++gameCounter;//prefix 
+
+console.log(gameCounter);
