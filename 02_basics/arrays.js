@@ -79,4 +79,3 @@ console.log("D", myArr);
 // // Main Difference:
 // // slice() -> end index excluded
 // // splice() -> second parameter = number of elements to delete
-
