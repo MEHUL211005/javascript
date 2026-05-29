@@ -59,5 +59,39 @@ function loginUserMessage(username){                 // we can give default valu
      return `${username} just logged in`
  }
 
- console.log(loginUserMessage());
+console.log(loginUserMessage());
 
+function calculatePrice(num1){
+    return num1
+}
+
+console.log(calculatePrice(200));
+console.log(calculatePrice(200, 300, 400)); //200 
+
+//use rest operator 
+
+function calculatePrice2(...num1){                     //(val1, val2, ...num1) => first two will not come in array
+    return num1 
+}
+console.log(calculatePrice2(200, 300, 400)); //array of these items will come
+
+const User = {
+    username: "Mehul",
+    price: 1000   //prices , output will be undefined
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(User)
+//another way output will be same 
+handleObject({
+    username: "sam",
+    price: 400
+})
+
+const myNewArray = [200, 400, 600]
+function returnSeconfValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArr));
