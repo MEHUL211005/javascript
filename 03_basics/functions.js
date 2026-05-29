@@ -91,7 +91,7 @@ handleObject({
 })
 
 const myNewArray = [200, 400, 600]
-function returnSeconfValue(getArray){
+function returnSecondValue(getArray){
     return getArray[1]
 }
-console.log(returnSecondValue(myNewArr));
+console.log(returnSecondValue(myNewArray));
